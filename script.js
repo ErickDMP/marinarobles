@@ -13,7 +13,7 @@ const navbar = document.querySelector(".navbar");
 
 
 const navLinks = document.querySelectorAll(".nav-menu a");
-const navLinks = document.querySelectorAll(".nav-menu a");
+
 const sections = document.querySelectorAll("section[id]");
 
 const reserveButton = document.querySelector(".btn-reserva");
@@ -275,31 +275,33 @@ const navMenu = document.querySelector(".nav-menu");
             ABRIR / CERRAR MENÚ
 ==========================================================*/
 
-if(menuToggle && navMenu){
+if (menuToggle && navMenu) {
 
-    menuToggle.addEventListener("click",()=>{
+    menuToggle.addEventListener("click", () => {
 
         menuToggle.classList.toggle("active");
-
         navMenu.classList.toggle("menu-open");
+
+        document.body.classList.toggle("menu-open");
 
     });
 
 }
 
 /*==========================================================
-            CERRAR AL PULSAR UN ENLACE
+        CERRAR AL PULSAR UN ENLACE
 ==========================================================*/
 
-navLinks.forEach((link)=>{
+navLinks.forEach((link) => {
 
-    link.addEventListener("click",()=>{
+    link.addEventListener("click", () => {
 
-        if(window.innerWidth <= 992){
+        if (window.innerWidth <= 1100) {
 
             menuToggle.classList.remove("active");
-
             navMenu.classList.remove("menu-open");
+
+            document.body.classList.remove("menu-open");
 
         }
 
@@ -311,43 +313,25 @@ navLinks.forEach((link)=>{
         CERRAR AL HACER CLIC FUERA
 ==========================================================*/
 
-document.addEventListener("click",(event)=>{
+document.addEventListener("click", (event) => {
 
-    if(window.innerWidth > 992){
-
-        return;
-
-    }
+    if (window.innerWidth > 1100) return;
 
     const clickInsideMenu = navMenu.contains(event.target);
-
     const clickOnButton = menuToggle.contains(event.target);
 
-    if(!clickInsideMenu && !clickOnButton){
+    if (!clickInsideMenu && !clickOnButton) {
 
         menuToggle.classList.remove("active");
-
         navMenu.classList.remove("menu-open");
+        document.body.classList.remove("menu-open");
 
     }
 
 });
 
-/*==========================================================
-        CERRAR SI LA VENTANA SE HACE GRANDE
-==========================================================*/
 
-window.addEventListener("resize",()=>{
 
-    if(window.innerWidth > 992){
-
-        menuToggle.classList.remove("active");
-
-        navMenu.classList.remove("menu-open");
-
-    }
-
-});
 /*==========================================================
                 BOTÓN VOLVER ARRIBA
 ==========================================================*/
@@ -450,6 +434,20 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         updateActiveSection();
 
+    }
+
+});
+/*==========================================================
+        REINICIAR AL VOLVER A ESCRITORIO
+==========================================================*/
+
+window.addEventListener("resize", () => {
+
+    if (window.innerWidth > 1100) {
+
+        menuToggle.classList.remove("active");
+        navMenu.classList.remove("menu-open");
+        document.body.classList.remove("menu-open");
     }
 
 });
