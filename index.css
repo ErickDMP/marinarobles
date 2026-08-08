@@ -2450,3 +2450,268 @@ justify-content:center;
 body.menu-open{
     overflow:hidden;
 }
+
+
+
+/* ==========================================================
+                MODO OSCURO — NEGRO
+========================================================== */
+
+body.dark-mode {
+
+    background-color: #000000;
+    color: #ffffff;
+
+}
+
+
+/* ==========================================================
+                    TEXTOS
+========================================================== */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode p {
+
+    color: #d1d1d1;
+
+}
+
+
+/* ==========================================================
+                FONDOS PRINCIPALES
+========================================================== */
+
+body.dark-mode section,
+body.dark-mode .section {
+
+    background-color: #000000;
+
+}
+
+
+/* ==========================================================
+                    TARJETAS
+========================================================== */
+
+body.dark-mode .value-card,
+body.dark-mode .service-card,
+body.dark-mode .process-card,
+body.dark-mode .info-card,
+body.dark-mode .timeline-card,
+body.dark-mode .appointment-form {
+
+    background-color: #111111;
+    border-color: #2a2a2a;
+
+}
+
+
+/* ==========================================================
+                    HEADER
+========================================================== */
+
+body.dark-mode header,
+body.dark-mode .navbar {
+
+    background-color: #000000;
+
+}
+
+
+/* ==========================================================
+                    MENÚ
+========================================================== */
+
+body.dark-mode .nav-menu {
+
+    background-color: #000000;
+
+}
+
+body.dark-mode .nav-menu a {
+
+    color: #ffffff;
+
+}
+
+
+/* ==========================================================
+                    FORMULARIOS
+========================================================== */
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+
+    background-color: #0a0a0a;
+    color: #ffffff;
+    border-color: #333333;
+
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+
+    color: #888888;
+
+}
+
+
+/* ==========================================================
+                    FOOTER
+========================================================== */
+
+body.dark-mode .footer {
+
+    background-color: #000000;
+
+}
+
+body.dark-mode .footer p,
+body.dark-mode .footer a {
+
+    color: #d1d1d1;
+
+}
+
+
+/* ==========================================================
+                BOTÓN HAMBURGUESA
+========================================================== */
+
+body.dark-mode .menu-toggle span {
+
+    background-color: #ffffff;
+
+}
+/* ==========================================================
+                BOTÓN MODO OSCURO
+========================================================== */
+
+.theme-toggle {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #d9e3e0;
+    border-radius: 50%;
+
+    background-color: #ffffff;
+    color: #287f70;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .2s ease;
+
+}
+
+
+/* Hover */
+
+.theme-toggle:hover {
+
+    background-color: #e8f4f1;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* Pulsación */
+
+.theme-toggle:active {
+
+    transform: scale(.94);
+
+}
+
+
+/* ==========================================================
+            BOTÓN EN MODO OSCURO
+========================================================== */
+
+body.dark-mode .theme-toggle {
+
+    background-color: #111111;
+
+    border-color: #333333;
+
+    color: #f5d76e;
+
+}
+
+
+/* Hover en modo oscuro */
+
+body.dark-mode .theme-toggle:hover {
+
+    background-color: #1c1c1c;
+
+}
+/* ==========================================================
+        CORRECCIÓN FONDO HEADER — MODO OSCURO
+========================================================== */
+
+body.dark-mode {
+    background-color: #000000 !important;
+}
+
+body.dark-mode header {
+    background-color: #000000 !important;
+}
+
+body.dark-mode .header {
+    background-color: #000000 !important;
+}
+
+body.dark-mode .navbar {
+    background-color: #000000 !important;
+}
+
+body.dark-mode .nav-container {
+    background-color: #000000 !important;
+}
+/* ==========================================================
+        LOGO — MODO OSCURO
+========================================================== */
+
+body.dark-mode .logo-title {
+
+    color: #ffffff !important;
+
+}
+
+body.dark-mode .logo-subtitle {
+
+    color: #20b8d0 !important;
+
+}
+/* ==========================================================
+        FRASE INSPIRADORA — MODO OSCURO
+========================================================== */
+
+body.dark-mode .quote blockquote {
+    color: #ffffff !important;
+}

@@ -25,7 +25,7 @@ VARIABLES
 
 :root{
 
---primary:#2E7D6B;
+--primary:#299bad;
 --primary-hover:#256B5B;
 
 --text:#1F2937;
@@ -75,7 +75,7 @@ color:var(--primary);
 
 .logo span{
 
-color:#63B39F;
+color:#299bad;
 
 }
 
@@ -209,5 +209,209 @@ article h2{
 font-size:1.35rem;
 
 }
+
+}
+/* ==========================================================
+                MODO OSCURO — AVISO LEGAL
+========================================================== */
+
+body.dark-mode {
+
+    background: #000000;
+    color: #ffffff;
+
+}
+
+
+/* Header */
+
+body.dark-mode header {
+
+    background: #000000;
+    border-color: #2a2a2a;
+
+}
+
+
+/* Logo */
+
+body.dark-mode .logo {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .logo span {
+
+    color: #63B39F;
+
+}
+
+
+/* Hero */
+
+body.dark-mode .hero {
+
+    background: #000000;
+
+}
+
+body.dark-mode .hero h1 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .subtitle {
+
+    color: #d1d1d1;
+
+}
+
+
+/* Contenido */
+
+body.dark-mode .legal {
+
+    background: #000000;
+
+}
+
+body.dark-mode article {
+
+    background: #111111;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+
+}
+
+
+/* Títulos */
+
+body.dark-mode article h2 {
+
+    color: #2E7D6B;
+
+}
+
+
+/* Textos */
+
+body.dark-mode article p,
+body.dark-mode article li {
+
+    color: #d1d1d1;
+
+}
+
+body.dark-mode article strong {
+
+    color: #ffffff;
+
+}
+
+
+/* Footer */
+
+body.dark-mode footer {
+
+    background: #000000;
+
+    border-color: #2a2a2a;
+
+    color: #bdbdbd;
+
+}
+/* ==========================================================
+                BOTÓN MODO OSCURO
+========================================================== */
+
+.theme-toggle {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #d9e3e0;
+    border-radius: 50%;
+
+    background-color: #ffffff;
+    color: #287f70;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .2s ease;
+
+}
+
+.theme-toggle:hover {
+
+    background-color: #e8f4f1;
+
+    transform: translateY(-2px);
+
+}
+
+.theme-toggle:active {
+
+    transform: scale(.94);
+
+}
+
+
+/* Modo oscuro */
+
+body.dark-mode .theme-toggle {
+
+    background-color: #111111;
+
+    border-color: #333333;
+
+    color: #f5d76e;
+
+}
+
+body.dark-mode .theme-toggle:hover {
+
+    background-color: #1c1c1c;
+
+}
+
+
+/* ==========================================================
+            POSICIÓN DEL BOTÓN MODO OSCURO
+========================================================== */
+
+.theme-toggle {
+
+    position: fixed;
+
+    top: 25px;
+    right: 25px;
+
+    z-index: 9999;
+
+}
+.theme-icon {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    line-height: 1;
 
 }

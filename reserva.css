@@ -8,11 +8,11 @@
                 COLORES
     ==================================*/
 
-    --color-primary: #2E7D6B;
+    --color-primary: #299bad;
 
-    --color-primary-dark: #1F5F50;
+    --color-primary-dark: #299bad;
 
-    --color-primary-light: #5FA895;
+    --color-primary-light: #299bad;
 
     --color-secondary: #7BAA95;
 
@@ -2134,5 +2134,414 @@ section {
 .back-to-top:hover {
 
     transform: translateY(-4px);
+
+}
+/* ==========================================================
+                MODO OSCURO — RESERVA
+========================================================== */
+
+body.dark-mode {
+
+    background-color: #000000;
+    color: #ffffff;
+
+}
+
+
+/* ==========================================================
+                    TEXTOS
+========================================================== */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode p {
+
+    color: #d1d1d1;
+
+}
+
+
+/* ==========================================================
+                    HERO
+========================================================== */
+
+body.dark-mode .hero {
+
+    background: #000000;
+
+}
+
+body.dark-mode .hero-overlay {
+
+    background: rgba(0, 0, 0, .15);
+
+}
+
+body.dark-mode .hero p {
+
+    color: #d1d1d1;
+
+}
+
+
+/* ==========================================================
+                    INFORMACIÓN
+========================================================== */
+
+body.dark-mode .info {
+
+    background: #000000;
+
+}
+
+body.dark-mode .info-card {
+
+    background: #111111;
+
+    border-color: #2a2a2a;
+
+}
+
+body.dark-mode .info-card p {
+
+    color: #bdbdbd;
+
+}
+
+
+/* ==========================================================
+                FORMULARIO DE RESERVA
+========================================================== */
+
+body.dark-mode .appointment {
+
+    background: #000000;
+
+}
+
+body.dark-mode .appointment-info p {
+
+    color: #bdbdbd;
+
+}
+
+body.dark-mode .advantage {
+
+    background: #111111;
+
+    color: #ffffff;
+
+    border: 1px solid #2a2a2a;
+
+}
+
+body.dark-mode .appointment-form {
+
+    background: #111111;
+
+    border-color: #2a2a2a;
+
+}
+
+
+/* ==========================================================
+                    INPUTS
+========================================================== */
+
+body.dark-mode .input-group label {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .input-group input,
+body.dark-mode .input-group select,
+body.dark-mode .input-group textarea {
+
+    background: #0a0a0a;
+
+    color: #ffffff;
+
+    border-color: #333333;
+
+}
+
+body.dark-mode .input-group input::placeholder,
+body.dark-mode .input-group textarea::placeholder {
+
+    color: #888888;
+
+}
+
+body.dark-mode .input-group input:focus,
+body.dark-mode .input-group select:focus,
+body.dark-mode .input-group textarea:focus {
+
+    background: #111111;
+
+    color: #ffffff;
+
+}
+
+
+/* ==========================================================
+                    PRIVACIDAD
+========================================================== */
+
+body.dark-mode .privacy-box {
+
+    background: #111111;
+
+    border-color: #2a2a2a;
+
+}
+
+body.dark-mode .privacy-box h4 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .privacy-box p {
+
+    color: #bdbdbd;
+
+}
+
+
+/* ==========================================================
+                    PROCESO
+========================================================== */
+
+body.dark-mode .process {
+
+    background: #000000;
+
+}
+
+body.dark-mode .section-title p {
+
+    color: #bdbdbd;
+
+}
+
+body.dark-mode .timeline-card {
+
+    background: #111111;
+
+    border-color: #2a2a2a;
+
+}
+
+body.dark-mode .timeline-card p {
+
+    color: #bdbdbd;
+
+}
+
+
+/* ==========================================================
+                    FAQ
+========================================================== */
+
+body.dark-mode .faq {
+
+    background: #000000;
+
+}
+
+body.dark-mode .faq-item {
+
+    background: #111111;
+
+    border: 1px solid #2a2a2a;
+
+}
+
+body.dark-mode .faq-question {
+
+    background: #111111;
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .faq-answer p {
+
+    color: #bdbdbd;
+
+}
+
+
+/* ==========================================================
+                CONTACTO DIRECTO
+========================================================== */
+
+body.dark-mode .contact-cta {
+
+    background: #000000;
+
+}
+
+body.dark-mode .contact-card {
+
+    background: #111111;
+
+    border-color: #2a2a2a;
+
+}
+
+body.dark-mode .contact-card p {
+
+    color: #bdbdbd;
+
+}
+
+
+/* ==========================================================
+                    EMERGENCIA
+========================================================== */
+
+body.dark-mode .emergency-box {
+
+    background: #111111;
+
+    border-color: #3a3a3a;
+
+}
+
+body.dark-mode .emergency-content p {
+
+    color: #bdbdbd;
+
+}
+
+
+/* ==========================================================
+                    FOOTER
+========================================================== */
+
+body.dark-mode .footer {
+
+    background: #000000;
+
+}
+
+body.dark-mode .footer-column h3,
+body.dark-mode .footer-column h4 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .footer-column p,
+body.dark-mode .footer-column a {
+
+    color: #bdbdbd;
+
+}
+
+body.dark-mode .footer-bottom {
+
+    border-color: #2a2a2a;
+
+}
+/* ==========================================================
+                BOTÓN MODO OSCURO — RESERVA
+========================================================== */
+
+.theme-toggle {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #d9e3e0;
+    border-radius: 50%;
+
+    background-color: #ffffff;
+    color: #287f70;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .2s ease;
+
+}
+
+
+/* Hover */
+
+.theme-toggle:hover {
+
+    background-color: #e8f4f1;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* Pulsación */
+
+.theme-toggle:active {
+
+    transform: scale(.94);
+
+}
+
+
+/* ==========================================================
+            BOTÓN EN MODO OSCURO
+========================================================== */
+
+body.dark-mode .theme-toggle {
+
+    background-color: #111111;
+
+    border-color: #333333;
+
+    color: #f5d76e;
+
+}
+
+
+/* Hover en modo oscuro */
+
+body.dark-mode .theme-toggle:hover {
+
+    background-color: #1c1c1c;
+
+}
+/* ==========================================================
+                POSICIÓN DEL BOTÓN
+========================================================== */
+
+body > .theme-toggle {
+
+    position: fixed;
+
+    top: 25px;
+    right: 25px;
+
+    z-index: 9999;
 
 }

@@ -451,3 +451,85 @@ window.addEventListener("resize", () => {
     }
 
 });
+/* ==========================================================
+                MODO OSCURO
+========================================================== */
+
+const themeToggle = document.querySelector(".theme-toggle");
+const themeIcon = themeToggle?.querySelector("i");
+
+
+/* ==========================================================
+                RECUPERAR TEMA GUARDADO
+========================================================== */
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+
+    document.body.classList.add("dark-mode");
+
+    if (themeIcon) {
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+    }
+
+    if (themeToggle) {
+        themeToggle.setAttribute(
+            "aria-label",
+            "Activar modo claro"
+        );
+    }
+
+}
+
+
+/* ==========================================================
+                CAMBIAR TEMA
+========================================================== */
+
+if (themeToggle) {
+
+    themeToggle.addEventListener("click", () => {
+
+        const isDark =
+            document.body.classList.toggle("dark-mode");
+
+
+        /* Guardar preferencia */
+
+        localStorage.setItem(
+            "theme",
+            isDark ? "dark" : "light"
+        );
+
+
+        /* Cambiar icono */
+
+        if (themeIcon) {
+
+            themeIcon.classList.toggle(
+                "fa-moon",
+                !isDark
+            );
+
+            themeIcon.classList.toggle(
+                "fa-sun",
+                isDark
+            );
+
+        }
+
+
+        /* Actualizar accesibilidad */
+
+        themeToggle.setAttribute(
+            "aria-label",
+            isDark
+                ? "Activar modo claro"
+                : "Activar modo oscuro"
+        );
+
+    });
+
+}
